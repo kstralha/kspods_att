@@ -1,0 +1,262 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  border: 0
+}
+
+header{
+  background-color: rgb(0, 0, 0) ;
+  
+}
+
+.logo {
+  width: 100vw; 
+  max-width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+}
+
+body{
+  font-family:"Arial";
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+header {
+  background-color:#000000
+}
+
+nav{
+  position: absolute;
+  right: 0;
+  top: 70px;
+  
+}
+
+nav li{
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a{
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+nav a:hover{
+  color: red;
+  text-decoration: underline;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 30px;
+}
+
+table {
+  
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  border: 5px solid black;
+  width: 95%;
+  background-color: #aaa3a3;
+}
+
+td {
+  padding: 10px;
+  border: 2px solid #020202;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+th {
+  background-color: #504b4b;
+  text-align: center;
+  height: 30px;
+  border-right: 1px solid #000000;
+  border: 2px solid black;
+  color: #f2f2f2;
+}
+
+thead th {
+  border-bottom: 2px solid black; /* Linha mais grossa separando cabeçalho */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #6d6b6b;
+}
+
+tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+tbody td:first-child, thead th:first-child {
+  border-left: 1px solid black; /* Linha separando a primeira coluna */
+}
+
+
+h2 {
+  text-align: center;    
+  margin-top: 150px;
+}
+
+input, textarea {
+  width: 52%;
+  padding: 10px;
+  border: 2px solid rgb(2, 2, 2);
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+#adicionar-encomenda:hover{ 
+
+  color: rgb(250, 250, 250);
+  text-decoration: underline;
+  background-color: rgb(75, 218, 83);
+
+}
+
+
+
+#adicionar-encomenda { /* --- Botão Enviar --- */
+  background-color: #0e0e0e;
+  color: #ffffff;
+  padding: 10px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 20%;    
+  margin: 0 auto;
+  display: block;
+  transition: 0.8s;
+}
+
+
+footer {
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgb(0, 0, 0);
+  padding: 40px 0 40px 0;
+  
+}
+
+.logo_footer {
+  width: 150px;
+}
+
+.copyright{
+  color: white;
+  font-size: 12px;
+  margin: 20px;
+}
+
+.grupo {
+text-align: center;
+margin: 0 auto;
+width: 50%;
+display: flex; 
+justify-content: center; 
+}
+
+.grupo input {
+flex: 1; 
+margin: 10px; 
+}
+
+.grupo select {
+flex: 1; 
+margin: 10px; 
+padding: 10px; 
+border: 2px solid black; 
+border-radius: 5px; 
+font-size: 16px;
+background-color: #fff; 
+color: #333;
+}
+
+.grupo-label {
+font-weight: bold;
+}
+
+.info-produto,
+.info-preco-unitario,
+.info-preco-total,
+.info-nome,
+.info-quantidade {
+text-align: center;
+}
+
+#form-adiciona {
+padding-bottom: 400px;
+}
+
+.container {
+padding-top: 70px;
+background: linear-gradient(#818080, #ffffff);
+}
+
+.filtar-tabela {
+background-color: black;
+}
+
+.api {
+  background: #1b1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 300px;
+  align-items: center;
+  position: absolute;
+  top: 190%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#titulo_api {
+  font-size: 24px;
+  margin-bottom: 20px;
+  justify-content: center;
+  color: #8b8989;
+}
+
+#quote-box {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#quote {
+  font-size: 18px;
+  margin: 10px 0;
+  justify-content: center;
+  color: white;
+}
+
+#author {
+  font-size: 16px;
+  color: #6e6e6e;
+  justify-content: center;
+}
+
+#new-quote {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #007BFF;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+

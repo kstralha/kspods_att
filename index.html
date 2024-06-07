@@ -1,0 +1,154 @@
+
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>K$ POD'S</title>
+</head>
+
+<body>
+    <header>
+        <div class = "banner">
+            <img src="bannertest.png" alt="Desporza bico" class = "logo">
+        </div>
+    </header>
+    <main>
+    
+        <section class ="container">
+            
+            <h1 class="titulo">Lista de encomendas</h1>
+
+            </div>
+           <br><br>
+           <label for="filtrar-tabela">Filtrar</label>
+           <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente">
+            <table>
+                <thead>
+                    <tr class = "itens-tabela">
+                        <th>Nome</th>
+                        <th>Marca</th>
+                        <th>Quantidade</th>
+                        <th>Valor Unitário</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                
+                <tbody id = "tabela-clientes">
+                    
+                    <tr class="clientes">
+                        <td class="info-nome">Junior</td>
+                        <td class="info-produto">IGNITE</td>
+                        <td class="info-quantidade">2</td>
+                        <td class="info-preco-unitario">100</td>
+                        <td class="info-preco-total"></td>
+                    </tr>
+                    
+                    <tr class="clientes">
+                        <td class="info-nome">Pedro</td>
+                        <td class="info-produto">ELFBAR</td>
+                        <td class="info-quantidade">2</td>
+                        <td class="info-preco-unitario">100</td>
+                        <td class="info-preco-total"></td>
+                    </tr>
+                    
+                    <tr class="clientes">
+                        <td class="info-nome">Lucas</td>
+                        <td class="info-produto">OXBAR</td>
+                        <td class="info-quantidade">4</td>
+                        <td class="info-preco-unitario">82</td>
+                        <td class="info-preco-total"></td>
+                    </tr>
+                    
+                    <tr class="clientes">
+                        <td class="info-nome">João</td>
+                        <td class="info-produto">AMSTERDAN</td>
+                        <td class="info-quantidade">1</td>
+                        <td class="info-preco-unitario">20</td>
+                        <td class="info-preco-total"></td>
+                    </tr>
+                    
+                    <tr class="clientes">
+                        <td class="info-nome">Kayque</td>
+                        <td class="info-produto">DICKBAR</td>
+                        <td class="info-quantidade">2</td>
+                        <td class="info-preco-unitario">100</td>
+                        <td class="info-preco-total"></td>
+                    </tr>
+                    
+                    <tr class="clientes">
+                        <td class="info-nome">Paula</td>
+                        <td class="info-produto">LIFE POD'S</td>
+                        <td class="info-quantidade">5</td>
+                        <td class="info-preco-unitario">90</td>
+                        <td class="info-preco-total"></td>
+                    
+                    </tr>
+                </tbody>
+            </table>
+
+           
+           
+            <!--Formulário de inclusão de encomendas -->
+
+            
+            <h2 class="titulo_form" >Novo pedido</h2>
+            <ul id = "mensagem-erro"></ul>
+            
+            <form id = "form-adiciona">
+                
+                <div class = "grupo">
+                    <label for = "nome" class = grupo-label>Nome: </label>
+                    <input type="text" id = "nome" name = "nome" required class="campo"><br>
+                </div>
+
+                <div class ="grupo">
+                    <label for="produto" class = grupo-label>Produto: </label>
+                    <select id ="produto" name = "produto" class = "campo campo-medio">
+                        <option value="">Selecione o produto:</option>
+                        <option value="IGNITE">IGNITE</option>
+                        <option value="OXBAR">OXBAR</option>
+                        <option value="DICKBAR">DICKBAR</option>
+                        <option value="AMSTERDAM">AMSTERDAM</option>
+                        <option value="LIFE POD'S">LIFE POD'S</option>
+                    </select><br>
+                </div>
+                    
+                <div class ="grupo">   
+                    <label for="quantidade" class = grupo-label>Quantidade: </label>
+                    <input type="number" id ="quantidade" name= "quantidade" class="campo campo-medio" required><br>
+                </div>
+
+                <div class="grupo">   
+                    <label for = "unitario" class = grupo-label>Valor unitário</label>
+                    <input type="number" id ="unitario" name ="unitario" class="campo campo-medio" required><br>
+                </div>
+
+                <input type="submit" id="adicionar-encomenda" class="botao bto-principal">
+                
+            </form>
+        </section>
+
+        <div class="api">
+            <h1 id="titulo_api">Um trago, uma frase</h1>
+            <div id="quote-box">
+                <p id="quote">Clique no botão para gerar uma frase motivacional.</p>
+                <p id="author"></p>
+            </div>
+            <button id="new-quote">Mais um trago</button>
+        </div>
+
+    </main>
+
+    <script src="forms.js"></script>
+    <script src="calcula-total.js"></script>
+    <script src="remover-encomenda.js"></script>
+    <script src="citacoes.js"></script>
+    <script src="filtrar.js"></script>
+
+    <footer class = "footer-cardapio" id ="footer-contato">
+        <img src="byKs.png" alt="Ks Pods" class="logo_footer">
+        <p class="copyright">&copy; Todos os direitos reservados para K$</p>
+    </footer>
+        
+    </body>
+</html>

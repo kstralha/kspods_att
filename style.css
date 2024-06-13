@@ -258,5 +258,10 @@ background-color: black;
   cursor: pointer;
 }
 
+.invisivel {
+  display: none;
+}
+
+
 
 
